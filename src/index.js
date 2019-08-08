@@ -1,10 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import ReactDOM from "react-dom";
+import "bulma";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import Singup from "./Singup";
+import Welcome from "./Welcome";
+
+function Main() {
+  return (
+    <Switch>
+      <Route exact path="/" component={App} />
+      <Route exact path="/singup" component={Singup} />
+      <Route exact path="/welcome" component={Welcome} />
+      <Route component={App} />
+    </Switch>
+  );
+}
+
+ReactDOM.render(
+  <BrowserRouter>
+    <Main />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

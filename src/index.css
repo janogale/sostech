@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container-full {
+  height: 100vh;
+  padding: 0 3rem;
+
+}
+
+.empty-space {
+  padding: 2% 0;
+}
+
+.input {
+  outline: 0;
+  border: 0;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(45deg, rgb(43, 200, 253) 0%, rgb(170, 46, 254) 100%) 1;
+  box-shadow: none;
+}
+
+.label {
+  color: #929292;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.button.is-fullwidth {
+  background: linear-gradient(135deg, rgb(43, 200, 253) 0%, rgb(170, 46, 254) 100%);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.button a {
+  color: #fff;
+}
+
+p a {
+  color: #2a2b2b;
+  text-decoration: none;
+  font-weight: 600;
+}
